@@ -7,16 +7,48 @@
     <base href="/" />
     <link rel="icon" href="favicon.ico" />
     <link type="text/css" rel="stylesheet" href="main.css" />
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
   </head>
   <body>
     <main>
-      <img src="logo.png" alt="DFINITY logo" />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
+      <div class="container">
+        <div class="card">
+          <img src="#" id="nft1" />
+          <div class="info">
+            <p class="id1">ID</p>
+            <p class="address1">Owner: </p>
+            <p class="nameNFT1"></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="#" id="nft2" />
+          <div class="info">
+            <p class="id2">ID</p>
+            <p class="address2">Owner: </p>
+            <p class="nameNFT2"></p>
+          </div>
+        </div>
+
+      </div>
+      <form class="uploadImg" noValidate="" autoComplete="off">
+        <div class="uploadimage">
+          <h6>Create NFT</h6>
+          <input class="upload" type="file" accept="image/x-png,image/jpeg,image/gif,image/svg+xml,image/webp" />
+        </div>
+        
+        <div class="collection">
+          <h6>Collection Name</h6>
+          <div class="input__collection">
+            <input placeholder="e.g. APE" type="text" id="namenft"/>
+          </div>
+        </div>
+        <button class="button" type="submit"><h5>Mint NFT</h5></button>
       </form>
-      <section id="greeting"></section>
+      
     </main>
   </body>
 </html>

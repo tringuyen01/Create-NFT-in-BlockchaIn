@@ -4,6 +4,10 @@
       "main": "src/hello/main.mo",
       "type": "motoko"
     },
+    "nft":{
+      "main": "src/NFT/nft.mo",
+      "type": "motoko"
+    },
     "hello_assets": {
       "dependencies": [
         "hello"
